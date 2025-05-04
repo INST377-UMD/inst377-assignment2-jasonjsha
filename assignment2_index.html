@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>INST 377 Class Activities</title>
+  <link rel="stylesheet" href="assignment2_styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="assignment2_index.html">Home</a></li>
+      <li><a href="assignment2_stocks.html">Stocks</a></li>
+      <li><a href="assignment2_dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Home</h1>
+    <div class="buttons">
+      <button onclick="location.href='assignment2_stocks.html'">Stocks</button>
+      <button onclick="location.href='assignment2_dogs.html'">Dogs</button>
+    </div>
+    <div id="quote"></div>
+  </main>
+  <section id="audio-controls">
+    <h2>Audio Commands</h2>
+    <p>Use commands "Hello", "Change the color to [color]", or "Navigate to [Home|Stocks|Dogs]"</p>
+    <button onclick="annyang.start()">Audio On</button>
+    <button onclick="annyang.abort()">Audio Off</button>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="assignment2_annyangCommands.js"></script>
+  <script src="assignment2_script.js"></script>
+</body>
+</html>

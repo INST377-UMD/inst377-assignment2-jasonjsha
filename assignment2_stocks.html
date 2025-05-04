@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>INST 377 Stocks</title>
+  <link rel="stylesheet" href="assignment2_styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="assignment2_index.html">Home</a></li>
+      <li><a href="assignment2_stocks.html">Stocks</a></li>
+      <li><a href="assignment2_dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Lookup Stocks</h1>
+    <input type="text" id="tickerInput" maxlength="5" placeholder="Enter Stock Ticker">
+    <select id="days">
+      <option value="30">30 Days</option>
+      <option value="60">60 Days</option>
+      <option value="90">90 Days</option>
+    </select>
+    <button id="lookupBtn">Lookup</button>
+    <canvas id="stockChart"></canvas>
+    <h2>5 Most Trending Reddit Stocks</h2>
+    <table id="redditStocks"></table>
+  </main>
+  <section id="audio-controls">
+    <h2>Audio Commands</h2>
+    <p>Use commands "Hello", "Change the color to [color]", "Navigate to [Home|Stocks|Dogs], or say "Lookup [stock ticker]"</p>
+    <button onclick="annyang.start()">Audio On</button>
+    <button onclick="annyang.abort()">Audio Off</button>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="assignment2_annyangCommands.js"></script>
+  <script src="assignment2_stocks.js"></script>
+</body>
+</html>
